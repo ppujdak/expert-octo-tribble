@@ -8,20 +8,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="container">
-    <nav class="w3-mobile">
-  
-    <div class="w3-mobile">
-      <a class="w3-bar-item w3-button w3-mobile" href="#">WebSiteName</a>
+  <body class="w3-container">
+    <div class="w3-bar">
+      <a href="/" class="w3-bar-item w3-button">WebsiteName</a>
+      <a href="/quotes" class="w3-bar-item w3-button w3-mobile w3-green">Quotes</a>
+      <a href="/static_pages/home" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+      <a href="/static_pages/help" class="w3-bar-item w3-button w3-mobile w3-green">Help</a>
+      <a href="/static_pages/about" class="w3-bar-item w3-button w3-mobile w3-green">About</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/quotes" class="w3-bar-item w3-button w3-mobile w3-green">Quotes</a></li>
-      <li><a href="/static_pages/home" class="w3-bar-item w3-button w3-mobile w3-green">Home</a></li>
-      <li><a href="/static_pages/help" class="w3-bar-item w3-button w3-mobile w3-green">Help</a></li>
-      <li><a href="/static_pages/about" class="w3-bar-item w3-button w3-mobile w3-green">About</a></li>
-    </ul>
-  
-    </nav>
     <div>
     <%= yield %>
     
